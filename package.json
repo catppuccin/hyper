@@ -1,0 +1,27 @@
+{
+  "name": "hypercat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "CatPuccin theme for Hyper!",
+  "license": "MIT",
+  "repository": "asheeeshh/hypercat",
+  "author": {
+    "name": "ashish",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/asheeeshh/wordinal.git"
+    }
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hyper",
+    "hyperterm",
+    "dark",
+    "catpuccin",
+    "colorful",
+    "theme",
+    "syntax"
+  ]
+}
