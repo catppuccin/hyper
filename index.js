@@ -31,14 +31,13 @@ exports.decorateConfig = config => {
       cyan,
       white: lightWhite,
       lightBlack,
-      darkBlack,
       lightRed: red,
       lightGreen: green,
       lightYellow: yellow,
       lightBlue: blue,
       lightMagenta: magenta,
       lightCyan: cyan,
-      lightWhite
+      lightWhite: lightWhite,
     },
     css: `
       ${config.css}
