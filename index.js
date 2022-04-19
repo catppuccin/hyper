@@ -37,7 +37,7 @@ exports.decorateConfig = config => {
       lightBlue: blue,
       lightMagenta: magenta,
       lightCyan: cyan,
-      lightWhite: lightWhite,
+      lightWhite: white,
     },
     css: `
       ${config.css}
