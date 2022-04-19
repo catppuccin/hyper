@@ -17,6 +17,12 @@ Hypurr
 - [License](#license)
 
 ## Install
+Add the following line to `plugins` field in your `~/.hyper.js`
+```js
+plugins: [
+  'hypurr'
+]
+```
 
 ## Contributors
 
