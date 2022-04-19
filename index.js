@@ -10,10 +10,9 @@ const blue = '#96CDFB';
 const magenta = '#F5C2E7';
 const cyan = '#89DCEB';
 const white = '#C3BAC6';
-const lightBlack = '#988BA2';
-const lightWhite = '#D9E0EE';
-const darkBlue = '#96CDFB';
-const lightBlue = '#89DCEB';
+const lightBlack = '#575268';
+const darkBlack = '#302D41';
+const lightWhite = '#C9CBFF';
 
 exports.decorateConfig = config => {
   return Object.assign({}, config, {
@@ -32,13 +31,14 @@ exports.decorateConfig = config => {
       cyan,
       white: lightWhite,
       lightBlack,
+      darkBlack,
       lightRed: red,
       lightGreen: green,
       lightYellow: yellow,
       lightBlue: blue,
       lightMagenta: magenta,
       lightCyan: cyan,
-      lightWhite: white
+      lightWhite
     },
     css: `
       ${config.css}
@@ -63,11 +63,11 @@ exports.decorateConfig = config => {
         transition: all 140ms ease;
       }
       .tab_tab:not(.tab_active) {
-        background: ${darkBlue};
-        color: ${lightBlack};
+        background: ${darkBlack};
+        color: ${lightWhite};
       }
       .tab_tab:not(.tab_active):hover {
-        background: ${lightBlue};
+        background: ${lightBlack};
         color: ${foregroundColor};
         transition: background 140ms ease;
       }
@@ -80,7 +80,7 @@ exports.decorateConfig = config => {
         height: 7px;
       }
       .splitpane_divider {
-        background-color: ${darkBlue} !important;
+        background-color: ${lightBlack} !important;
       }
       `
   });

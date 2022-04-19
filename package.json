@@ -1,15 +1,14 @@
 {
-  "name": "hypercat",
-  "version": "1.0.0",
+  "name": "hypurr",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "CatPuccin theme for Hyper!",
   "license": "MIT",
-  "repository": "asheeeshh/hypercat",
   "author": {
     "name": "ashish",
     "repository": {
       "type": "git",
-      "url": "https://github.com/asheeeshh/wordinal.git"
+      "url": "https://github.com/asheeeshh/hypurr.git"
     }
   },
   "files": [
