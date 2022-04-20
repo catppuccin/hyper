@@ -1,13 +1,13 @@
 {
   "name": "hypurr",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "description": "CatPuccin theme for Hyper!",
   "license": "MIT",
   "author": {
     "name": "ashish"
   },
-  "repository": "https://github.com/asheeeshh/hypurr",
+  "repository": "https://github.com/asheeeshh/hyper",
   "files": [
     "index.js"
   ],
