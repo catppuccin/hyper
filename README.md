@@ -6,14 +6,14 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/asheeeshh/hyper-catpuccin/stargazers"><img src="https://img.shields.io/github/stars/asheeeshh/hyper-catpuccin?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship"></a>
-    <a href="https://github.com/asheeeshh/hyper-catpuccin/issues"><img src="https://img.shields.io/github/issues/asheeeshh/hyper-catpuccin?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-    <a href="https://github.com/asheeeshh/hyper-catpuccin/contributors"><img src="https://img.shields.io/github/contributors/asheeeshh/hyper-catpuccin?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/hyper-catppuccin/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/hyper-catppuccin?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship"></a>
+    <a href="https://github.com/catppuccin/hyper-catppuccin/issues"><img src="https://img.shields.io/github/issues/catppuccin/hyper-catppuccin?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/hyper-catppuccin/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/hyper-catppuccin?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
 
 <div align="center">
-  <img src="https://github.com/asheeeshh/hyper-catpuccin/raw/main/media/screenshot.png" width="100%" />
+  <img src="https://i.imgur.com/RfG1G2U.png" width="100%" />
 </div>
 
 ## Contents
@@ -22,7 +22,7 @@
 - [License](#license)
 
 ## Install
-**Please note that the name of NPM package and the theme itself is `hypurr` and not `hyper-catpuccin`.**\
+**Please note that the name of NPM package and the theme itself is `hypurr` and not `hyper-catppuccin`.**\
 Add the following line to `plugins` field in your `~/.hyper.js`
 ```js
 plugins: [
