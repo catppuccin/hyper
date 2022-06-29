@@ -27,7 +27,7 @@
 Add the following line to `plugins` field in your `~/.hyper.js`
 ```js
 plugins: [
-  'hypurr'
+  'hypurr#latest'
 ]
 ```
 
