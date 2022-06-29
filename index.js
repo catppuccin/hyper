@@ -1,6 +1,6 @@
 "use strict";
 
-const palletes = {
+const palettes = {
     latte: {
         backgroundColor: "#eff1f5",
         foregroundColor: "#4c4f69",
@@ -104,7 +104,7 @@ const palletes = {
 };
 
 function getTheme(config) {
-    return palletes[config.catppuccinTheme.toLowerCase() || "macchiato"];
+    return palettes[config.catppuccinTheme.toLowerCase() || "macchiato"];
 }
 
 exports.decorateConfig = (config) => {

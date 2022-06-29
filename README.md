@@ -32,7 +32,7 @@ plugins: [
 ```
 
 ## Usage
-A total of 4 different color palletes are available in catppuccin theme --
+A total of 4 different color palettes are available in catppuccin theme --
 - [Latte](https://github.com/catppuccin/catppuccin#-palettes)
 - [Frappé](https://github.com/catppuccin/catppuccin#-palettes)
 - [Macchiato](https://github.com/catppuccin/catppuccin#-palettes)
