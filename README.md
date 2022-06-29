@@ -13,12 +13,13 @@
 
 
 <div align="center">
-  <img src="https://i.imgur.com/RfG1G2U.png" width="100%" />
+  <img src="media/preview.png" width="100%" />
 </div>
 
 ## Contents
 
 - [Install](#install)
+- [Usage](#usage)
 - [License](#license)
 
 ## Install
@@ -30,13 +31,34 @@ plugins: [
 ]
 ```
 
-## Contributors
+## Usage
+A total of 4 different color palletes are available in catppuccin theme --
+- [Latte](https://github.com/catppuccin/catppuccin#-palettes)
+- [Frappé](https://github.com/catppuccin/catppuccin#-palettes)
+- [Macchiato](https://github.com/catppuccin/catppuccin#-palettes)
+- [Mocha](https://github.com/catppuccin/catppuccin#-palettes)
 
-- Ashish ([@asheeeshh](https://github.com/asheeeshh))
+You can use the one you like from the four by adding the name of the theme (make sure you type frappé correctly if you're using it!) to the `catppuccinTheme` field in your `~/.hyper.js` like this --
+```js
+module.exports = {
+  ...
+  config : {
+    ...
+    catppuccinTheme: 'Frappé'
+    ...
+  }
+  ...
+}
+```   
+By default, the theme is set to `macchiato`.
 
 ## License
 
 [MIT](license.md) 
+
+## Contributors
+
+- Ashish ([@asheeeshh](https://github.com/asheeeshh))
 
 &nbsp;
 

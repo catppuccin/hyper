@@ -1,54 +1,127 @@
-'use strict';
-const foregroundColor = '#D9E0EE';
-const backgroundColor = '#1E1E2E';
-const selectionColor = '#575268';
-const black = '#6E6C7E';
-const red = '#F28FAD';
-const green = '#ABE9B3';
-const yellow = '#FAE3B0';
-const blue = '#96CDFB';
-const magenta = '#F5C2E7';
-const cyan = '#89DCEB';
-const white = '#C3BAC6';
-const lightBlack = '#575268';
-const darkBlack = '#302D41';
-const lightWhite = '#C9CBFF';
+"use strict";
 
-exports.decorateConfig = config => {
-  return Object.assign({}, config, {
-    backgroundColor,
-    foregroundColor,
-    selectionColor,
-    borderColor: darkBlack,
-    cursorColor: foregroundColor,
-    colors: {
-      black,
-      red,
-      green,
-      yellow,
-      blue,
-      magenta,
-      cyan,
-      white: lightWhite,
-      lightBlack,
-      lightRed: red,
-      lightGreen: green,
-      lightYellow: yellow,
-      lightBlue: blue,
-      lightMagenta: magenta,
-      lightCyan: cyan,
-      lightWhite: white,
+const palletes = {
+    latte: {
+        backgroundColor: "#eff1f5",
+        foregroundColor: "#4c4f69",
+        selectionColor: "#acb0be",
+        cursorColor: "#dc8a78",
+        cursorAccentColor: "eff1f5",
+        colors: {
+            black: "#5c5f77",
+            blue: "#1e66f5",
+            red: "#d20f39",
+            green: "#40a02b",
+            yellow: "#df8e1d",
+            magenta: "#e64553",
+            cyan: "#04a5e5",
+            white: "#acb0be",
+            lightBlack: "#6c6f85",
+            lightWhite: "#bcc0cc",
+            lightBlue: "#1e66f5",
+            lightRed: "#d20f39",
+            lightGreen: "#40a02b",
+            lightYellow: "#df8e1d",
+            lightMagenta: "#e64553",
+            lightCyan: "#04a5e5",
+        },
     },
-    css: `
+    frappé: {
+        backgroundColor: "#303446",
+        foregroundColor: "#c6d0f5",
+        selectionColor: "#626880",
+        cursorColor: "#f2d5cf",
+        cursorAccentColor: "#232634",
+        colors: {
+            black: "#51576d",
+            blue: "#8caaee",
+            red: "#e78284",
+            green: "#a6d189",
+            yellow: "#e5c890",
+            magenta: "#ea999c",
+            cyan: "#99d1db",
+            white: "#b5bfe2",
+            lightBlack: "#626880",
+            lightWhite: "#a5adce",
+            lightBlue: "#8caaee",
+            lightRed: "#e78284",
+            lightGreen: "#a6d189",
+            lightYellow: "#e5c890",
+            lightMagenta: "#ea999c",
+            lightCyan: "#99d1db",
+        },
+    },
+    macchiato: {
+        backgroundColor: "#24273a",
+        foregroundColor: "#cad3f5",
+        selectionColor: "#5b6078",
+        cursorColor: "#f4dbd6",
+        cursorAccentColor: "#181926",
+        colors: {
+            black: "#494d64",
+            blue: "#8aadf4",
+            red: "#ed8796",
+            green: "#a6da95",
+            yellow: "#eed49f",
+            magenta: "#ee99a0",
+            cyan: "#91d7e3",
+            white: "#b8c0e0",
+            lightBlack: "#5b6078",
+            lightWhite: "#a5adcb",
+            lightBlue: "#8aadf4",
+            lightRed: "#ed8796",
+            lightGreen: "#a6da95",
+            lightYellow: "#eed49f",
+            lightMagenta: "#ee99a0",
+            lightCyan: "#91d7e3",
+        },
+    },
+    mocha: {
+        backgroundColor: "#1e1e2e",
+        foregroundColor: "#cdd6f4",
+        selectionColor: "#585b70",
+        cursorColor: "#f5e0dc",
+        cursorAccentColor: "#11111b",
+        colors: {
+            black: "#89b4fa",
+            blue: "#1e66f5",
+            red: "#f38ba8",
+            green: "#a6e3a1",
+            yellow: "#f9e2af",
+            magenta: "#eba0ac",
+            cyan: "	#89dceb",
+            white: "#bac2de",
+            lightBlack: "#585b70",
+            lightWhite: "#a6adc8",
+            lightBlue: "#1e66f5",
+            lightRed: "#f38ba8",
+            lightGreen: "#a6e3a1",
+            lightYellow: "#f9e2af",
+            lightMagenta: "#eba0ac",
+            lightCyan: "	#89dceb",
+        },
+    },
+};
+
+function getTheme(config) {
+    return palletes[config.catppuccinTheme.toLowerCase() || "macchiato"];
+}
+
+exports.decorateConfig = (config) => {
+    const theme = getTheme(config);
+    return Object.assign({}, config, {
+        ...theme,
+        termCSS: config.termCSS || "",
+        css: `
       ${config.css}
       .hyper_main {
         border: none !important;
       }
       .header_header {
-        color: ${foregroundColor};
+        color: ${theme.foregroundColor};
       }
       .header_windowHeaderWithBorder {
-        border-color: ${backgroundColor} !important;
+        border-color: ${theme.backgroundColor} !important;
       }
       .tabs_borderShim {
         border-color: transparent !important;
@@ -57,17 +130,17 @@ exports.decorateConfig = config => {
         border: 0;
       }
       .tab_tab.tab_active {
-        background: ${backgroundColor};
-        color: ${foregroundColor};
+        background: ${theme.backgroundColor};
+        color: ${theme.foregroundColor};
         transition: all 140ms ease;
       }
       .tab_tab:not(.tab_active) {
-        background: ${darkBlack};
-        color: ${lightWhite};
+        background: ${theme.colors.black};
+        color: ${theme.colors.lightWhite};
       }
       .tab_tab:not(.tab_active):hover {
-        background: ${lightBlack};
-        color: ${foregroundColor};
+        background: ${theme.colors.lightBlack};
+        color: ${theme.foregroundColor};
         transition: background 140ms ease;
       }
       .tab_icon {
@@ -79,8 +152,8 @@ exports.decorateConfig = config => {
         height: 7px;
       }
       .splitpane_divider {
-        background-color: ${lightBlack} !important;
+        background-color: ${theme.colors.lightBlack} !important;
       }
-      `
-  });
+      `,
+    });
 };
