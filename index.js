@@ -84,7 +84,7 @@ const palettes = {
         cursorAccentColor: "#11111b",
         colors: {
             black: "#89b4fa",
-            blue: "#1e66f5",
+            blue: "#89b4fa",
             red: "#f38ba8",
             green: "#a6e3a1",
             yellow: "#f9e2af",
@@ -93,12 +93,12 @@ const palettes = {
             white: "#bac2de",
             lightBlack: "#585b70",
             lightWhite: "#a6adc8",
-            lightBlue: "#1e66f5",
+            lightBlue: "#89b4fa",
             lightRed: "#f38ba8",
             lightGreen: "#a6e3a1",
             lightYellow: "#f9e2af",
             lightMagenta: "#eba0ac",
-            lightCyan: "	#89dceb",
+            lightCyan: "#89dceb",
         },
     },
 };
