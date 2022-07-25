@@ -1,16 +1,18 @@
 {
     "name": "hypurr",
-    "version": "2.0.2",
-    "main": "index.js",
+    "version": "2.0.4",
     "description": "Catppuccin theme for Hyper!",
     "license": "MIT",
+    "scripts": {
+        "watch": "parcel watch",
+        "build": "parcel build"
+    },
     "author": {
         "name": "ashish"
     },
     "repository": "https://github.com/catppuccin/hyper-catppuccin",
-    "files": [
-        "index.js"
-    ],
+    "source": "index.js",
+    "main": "dist/main.js",
     "keywords": [
         "hyper",
         "hyperterm",
@@ -19,5 +21,8 @@
         "colorful",
         "theme",
         "syntax"
-    ]
+    ],
+    "devDependencies": {
+        "parcel": "^2.6.2"
+    }
 }
