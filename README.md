@@ -59,7 +59,7 @@ By default, the theme is set to `macchiato`.
 ## Contributors
 
 - Ashish ([@asrvd](https://github.com/asrvd))
-- Adal Zanabria ([AdalZanabria](https://github.com/AdalZanabria))
+- Adal Zanabria ([@AdalZanabria](https://github.com/AdalZanabria))
 
 &nbsp;
 
