@@ -33,10 +33,10 @@ plugins: [
 
 ## Usage
 A total of 4 different color palettes are available in catppuccin theme --
-- [Latte](https://github.com/catppuccin/catppuccin#-palettes)
-- [Frappé](https://github.com/catppuccin/catppuccin#-palettes)
-- [Macchiato](https://github.com/catppuccin/catppuccin#-palettes)
-- [Mocha](https://github.com/catppuccin/catppuccin#-palettes)
+- [Latte](https://github.com/catppuccin/catppuccin#-palette)
+- [Frappé](https://github.com/catppuccin/catppuccin#-palette)
+- [Macchiato](https://github.com/catppuccin/catppuccin#-palette)
+- [Mocha](https://github.com/catppuccin/catppuccin#-palette)
 
 You can use the one you like from the four by adding the name of the theme (make sure you type frappé correctly if you're using it!) to the `catppuccinTheme` field in your `~/.hyper.js` like this --
 ```js
