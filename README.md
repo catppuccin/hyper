@@ -70,6 +70,8 @@ By default, the theme is set to `macchiato`.
 
 - Ashish ([@asrvd](https://github.com/asrvd))
 - Adal Zanabria ([@AdalZanabria](https://github.com/AdalZanabria))
+- Nikita Sobolev ([@sobolevn](https://github.com/sobolevn))
+- Spedon ([@Spedon](https://github.com/Sped0n))
 
 &nbsp;
 
