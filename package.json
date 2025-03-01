@@ -1,28 +1,27 @@
 {
-    "name": "hypurr",
-    "version": "2.0.7",
-    "description": "Catppuccin theme for Hyper!",
+    "name": "@catppuccin/hyper",
+    "version": "1.0.8",
+    "description": "Soothing pastel theme for Hyper",
     "license": "MIT",
-    "scripts": {
-        "watch": "parcel watch",
-        "build": "parcel build"
+    "author": "Catppuccin Org",
+    "type": "commonjs",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/catppuccin/hyper.git"
     },
-    "author": {
-        "name": "ashish"
-    },
-    "repository": "https://github.com/catppuccin/hyper",
-    "source": "index.js",
-    "main": "dist/main.js",
+    "files": [
+        "index.js"
+    ],
     "keywords": [
         "hyper",
-        "hyperterm",
-        "dark",
-        "catpuccin",
-        "colorful",
-        "theme",
-        "syntax"
+        "hyper-theme",
+        "catppuccin",
+        "soothing",
+        "pastel",
+        "theme"
     ],
-    "devDependencies": {
-        "parcel": "^2.6.2"
-    }
+    "dependencies": {
+        "@catppuccin/palette": "^1.7.1"
+    },
+    "packageManager": "pnpm@10.4.1"
 }
